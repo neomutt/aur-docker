@@ -18,14 +18,14 @@ services:
  - docker
 
 script:
-  - docker run -v $TRAVIS_BUILD_DIR:/pkg hobarrera/makepkg
+  - docker run -v $TRAVIS_BUILD_DIR:/pkg neomutt/makepkg
 ```
 
 Usage locally
 -------------
 
 ```
-docker run -v $(pwd):/pkg hobarrera/makepkg
+docker run -v $(pwd):/pkg neomutt/makepkg
 ```
 
 Usage with GitLab CI
